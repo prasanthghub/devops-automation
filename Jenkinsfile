@@ -6,7 +6,7 @@ pipeline {
     stages{
         stage('Build Maven'){
             steps{
-                git branch: 'main', url: 'https://github.com/Java-Techie-jt/devops-automation.git'
+                git branch: 'main', url: 'https://github.com/prasanthghub/devops-automation.git'
                 sh 'mvn clean install'
             }
         }
