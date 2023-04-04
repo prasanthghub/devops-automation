@@ -13,7 +13,7 @@ pipeline {
         stage('Build docker image'){
             steps{
                 script{
-                    sh 'docker build -t prasanthmeduri/jenkins-automation .'
+                    sh 'docker build -t prasanthmeduri/devops-integration .'
                 }
             }
         }
@@ -24,7 +24,7 @@ pipeline {
                    sh 'docker login -u prasanthmeduri -p ${prasanth@}'
 
 }
-                   sh 'docker push prasanthmeduri/jenkins-automation'
+                   sh 'docker push prasanthmeduri/devops-integration'
                 }
             }
         }
